@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta data -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- style sheets -->
+    <link rel="stylesheet" href="/docs/styles/styles.css" />
+    <link rel="stylesheet" href="/docs/styles/about-styles.css">
+    <link rel="stylesheet" href="/docs/styles/projects-styles.css">
+    <link rel="stylesheet" href="/docs/styles/contact-styles.css">
+
+    <title>P - P - P</title>
+  </head>
+  <body>
+    <!-- navigation-bar -->
+    <nav class="navbar">
+      <div class="nav-left">
+        <div id="nav-button" type="button">
+          Home<i class="fa-solid fa-caret-down"></i>
+        </div>
+      </div>
+      <div class="nav-right">
+        <a href="https://github.com/gelthemu" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+
+      <div id="nav-popup">
+        <a href="#about-me" class="nav-popup-item">About</a>
+        <a href="#projects" class="nav-popup-item">Projects</a>
+        <a
+          href="https://x.com/gelthemu"
+          class="nav-popup-item follow"
+          target="_blank"
+        >
+          Follow on X</a
+        >
+      </div>
+    </nav>
+
+    <!-- side-bar -->
+    <section id="sidebar">
+      <div class="sidebar">
+        <div class="sidebar-logo">Gel.</div>
+        <div class="sidebar-content">
+          <a href="#hero" title="Home"><i class="fa-solid fa-house"></i></a>
+          <a href="#projects" title="Projects"
+            ><i class="fa-solid fa-folder-open"></i
+          ></a>
+          <a href="#contact-me" title="Connect"
+            ><i class="fa-solid fa-user-plus"></i
+          ></a>
+        </div>
+        <div class="sidebar-footer">&copy; <small>2024</small></div>
+      </div>
+    </section>
+
+    <!-- hero -->
+    <section id="hero">
+      <div class="hero-overlay">
+        <h1>Gelthem <span>MUCUNGUZI</span></h1>
+        <p>
+          Howdy! I'm a front-end developer strongly<br />focused on crafting
+          beautiful, user-friendly websites.
+        </p>
+      </div>
+    </section>
+
+    <!-- about-me -->
+    <section id="about-me">
+      <div class="about-me">
+        <h1>About Me</h1>
+        <div class="about-me-content">
+          <div class="about-me-img">
+            <img src="/assets/about-image.jpg" alt="Gel Mucu" />
+          </div>
+          <div class="about-me-details">
+            <p>
+              I'm an aspiring front-end developer actively refining my skills
+              through <br /> Codecademy's Front-end Engineer career path. I study, code and <br />
+              design using Canva. <br />
+              <br />
+              Check out some of my <span>amazing projects</span> here
+              <a href="./projects.html"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i></a
+              >.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- education -->
+      <div class="education">
+        <div class="education-icon">
+          <h3>Education</h3>
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <div class="education-details">
+          <h5>BSc Computer Science</h5>
+          <p>
+            <a href="https://www.london.ac.uk/" target="_blank"
+              >UNIVERSITY OF LONDON</a
+            >
+          </p>
+          <p>
+            <small><i>Est. 2023</i></small>
+          </p>
+        </div>
+      </div>
+      <!-- skills -->
+      <div class="skills">
+        <div class="skills-icon">
+          <h3>Skills</h3>
+          <i class="fa-solid fa-laptop-code"></i>
+        </div>
+        <div class="skills-details">
+          <!-- skill-html -->
+          <div class="skill-card" title="HTML-5">
+            <div class="skill">
+              <div class="percent">
+                <svg width="150" height="150">
+                  <circle cx="26" cy="26" r="26"></circle>
+                  <circle cx="26" cy="26" r="26"></circle>
+                </svg>
+                <h2>95<span>%</span></h2>
+                <i class="fa-brands fa-html5"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- skill-css -->
+          <div class="skill-card">
+            <div class="skill" title="CSS-3">
+              <div class="percent">
+                <svg width="150" height="150">
+                  <circle cx="26" cy="26" r="26"></circle>
+                  <circle cx="26" cy="26" r="26"></circle>
+                </svg>
+                <h2>75<span>%</span></h2>
+                <i class="fa-brands fa-css3-alt"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- skill-js -->
+          <div class="skill-card" title="JS">
+            <div class="skill">
+              <div class="percent">
+                <svg width="150" height="150">
+                  <circle cx="26" cy="26" r="26"></circle>
+                  <circle cx="26" cy="26" r="26"></circle>
+                </svg>
+                <h2>50<span>%</span></h2>
+                <i class="fa-brands fa-js"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- projects -->
+    <section id="projects">
+      <h1>My Projects</h1>
+      <p>
+        From interactive web applications to complex backend systems, these
+        projects represent a milestone in my journey as a developer. Each
+        project is accompanied by a visual snapshot, a concise summary of its
+        purpose and functionality, and a detailed list of the technologies
+        that brought it to life.
+      </p>
+      <div class="projects-container">
+        <!-- project 1 -->
+        <div class="project">
+          <div>
+            <img src="/assets/projects/log-in-sign-up.png" alt="Log-In Sign-Up" />
+            <p>
+              A secure log-in and sign-up system with user authentication and
+              data validation. The system includes features for password
+              recovery and account management.
+            </p>
+          </div>
+          <h4>Log-In Sign-Up System</h4>
+        </div>
+        <!-- project 2 -->
+        <div class="project">
+          <div>
+            <img src="/assets/projects/to-do-list.png" alt="To-Do List" />
+            <p>
+              A user-friendly to-do list app allowing users to add, edit, and
+              delete tasks. Features include categorization, deadlines, and
+              task prioritization.
+            </p>
+          </div>
+          <h4>To-Do List Application</h4>
+        </div>
+        <!-- project 3 -->
+        <div class="project">
+          <div>
+            <img src="/assets/projects/spotify-music-player-clone.png" alt="Spotify Music Player Clone" />
+            <p>
+              A Spotify music-player clone with features like music controls,
+              playlists, and song thumbnail. Implemented is a sleek user
+              interface and seamless audio streaming.
+            </p>
+          </div>
+          <h4>Spotify Music-Player Clone</h4>
+        </div>
+        <!-- project 4 -->
+        <div class="project">
+          <div>
+            <img src="/assets/projects/starbucks-landing-page.png" alt="Starbucks Landing Page" />
+            <p>
+              A visually appealing landing page for Starbucks, showcasing
+              their products and promotions. The page is responsive and
+              optimized for various devices.
+            </p>
+          </div>
+          <h4>Starbucks Landing Page</h4>
+        </div>
+        <!-- project 5 -->
+        <div class="project">
+          <div>
+            <img src="/assets/projects/grid-cards-with-js.png" alt="Grid Cards with JS" />
+            <p>
+              A dynamic grid layout with interactive cards that respond to
+              user actions. Each card displays different content and
+              animations triggered by JS.
+            </p>
+          </div>
+          <h4>Interactive Grid Cards</h4>
+        </div>
+        <!-- project 6 -->
+        <div class="project">
+          <div>
+            <img src="/assets/projects/project-manager.png" alt="Portfolio Project Manager" />
+            <p>
+              A comprehensive tool for organizing multiple portfolio projects
+              efficiently. It includes features useful for streamlining
+              project workflows.
+            </p>
+          </div>
+          <h4>Portfolio Project Manager</h4>
+        </div>
+    </section>
+
+    <!-- contact-me -->
+    <section id="contact-me">
+      <div class="contact-me-left">
+        <div class="contact-me-left-content">
+          <h3>Contact Me</h3>
+          <p>
+            <i class="fa-solid fa-envelope"></i>-<span
+              ><a href="mailto:gelthemu@outlook.com" target="_blank"
+                >gelthemu@outlook.com</a
+              ></span
+            >
+          </p>
+          <p>
+            <i class="fa-brands fa-whatsapp"></i>-<span
+              ><a href="https://wa.me/256703188812" target="_blank"
+                >+256 703 188812</a
+              ></span
+            >
+          </p>
+        </div>
+      </div>
+      <div class="contact-me-right">
+        <div class="contact-me-right-content">
+          <h1>Get In Touch</h1>
+          <p>
+            Don't be shy! <br />
+            Send me a line or two at anytime, I will get back to you as soon as
+            I can. I promise not to send you any spam or newsletters.
+          </p>
+          <!-- -- emailForm -- -->
+          <div class="contact-email-form">
+            <form action="#" method="POST" id="emailForm">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="example@example.com"
+                required
+              />
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+
+          <div id="contact-popup">
+            <div class="contact-popup-content">
+              <p>Thank you for submitting your email.</p>
+              <button id="contact-closePopup">OK</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <small>All Rights Reserved, Geltaverse Inc.</small>
+    </footer>
+
+    <!-- scripts -->
+    <script src="/docs/scripts/scripts.js"></script>
+  </body>
+</html>
