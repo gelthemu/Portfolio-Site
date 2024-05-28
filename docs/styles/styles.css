@@ -160,7 +160,7 @@ body {
 }
 
 /* ===== hero =================================================== */
-#hero {
+.hero {
   height: 550px;
   background: url("/assets/hero-bg.png") no-repeat center bottom / cover;
   position: relative;
