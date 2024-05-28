@@ -52,7 +52,7 @@
     background: rgba(30, 30, 30, 0.95);
     border: 1px solid rgba(124, 124, 124, 0.5);
     opacity: 0;
-    color: var(--dim-gray);
+    color: var(--silver-lake);
     font-size: smaller;
     display: flex;
     align-items: center;
