@@ -9,7 +9,7 @@ use Dotenv\Dotenv;
 $dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] ?? '' == "POST") {
     $email = $_POST['email'];
 
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -27,8 +27,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->Port       = 587;
 
             //Recipients
-            $mail->setFrom('gelthemu@outlook.com', 'Mailer');
-            $mail->addAddress('gelthemu@gmail.com', 'Gel Muc');
+            $mail->setFrom('gelthemu@outlook.com', 'Portifolio Email Submissions');
+            $mail->addAddress('gelthemu@gmail.com', 'Gelthem Mucunguzi');
 
             // Content
             $mail->isHTML(true);
@@ -44,3 +44,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Invalid email address.";
     }
 }
+
+echo 'Notification email sent successfully.';
