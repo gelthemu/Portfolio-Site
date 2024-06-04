@@ -35,6 +35,32 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// mobile-sidebar-popup
+document.addEventListener("DOMContentLoaded", () => {
+  const mobileSidebarButton = document.getElementById("mobile-sidebar-button");
+  const mobileSidebarPopup = document.getElementById("mobile-sidebar-popup");
+  const mobileSidebarPopupClose = document.getElementById(
+    "mobile-sidebar-popup-close"
+  );
+  const links = mobileSidebarPopup.querySelectorAll(
+    ".mobile-sidebar-content a"
+  );
+
+  mobileSidebarButton.addEventListener("click", () => {
+    mobileSidebarPopup.classList.add("show");
+  });
+
+  mobileSidebarPopupClose.addEventListener("click", () => {
+    mobileSidebarPopup.classList.remove("show");
+  });
+
+  links.forEach((link) => {
+    link.addEventListener("click", () => {
+      mobileSidebarPopup.classList.remove("show");
+    });
+  });
+});
+
 // email-pop-up-message
 document.addEventListener("DOMContentLoaded", function () {
   const emailForm = document.getElementById("emailForm");
