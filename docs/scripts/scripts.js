@@ -68,20 +68,37 @@ document.addEventListener("DOMContentLoaded", function () {
   const contactClosePopup = document.getElementById("contact-closePopup");
 
   if (emailForm && contactPopup && contactClosePopup) {
-    emailForm.addEventListener("submit", (event) => {
+    emailForm.addEventListener("submit", function (event) {
       event.preventDefault();
       const email = document.getElementById("email").value;
       const isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
       if (isValid) {
-        contactPopup.style.display = "flex";
+        const formData = new FormData(emailForm);
+
+        fetch(emailForm.action, {
+          method: emailForm.method,
+          body: formData,
+        })
+          .then((response) => {
+            if (response.ok) {
+              contactPopup.style.display = "flex";
+            } else {
+              alert("There was an error submitting the form.");
+            }
+          })
+          .catch((error) => {
+            alert("There was an error submitting the form.");
+            console.error("Error:", error);
+          });
+
+        emailForm.reset();
       } else {
         alert("Please enter a valid email address.");
       }
-      emailForm.reset();
     });
 
-    contactClosePopup.addEventListener("click", () => {
+    contactClosePopup.addEventListener("click", function () {
       contactPopup.style.display = "none";
     });
   } else {
