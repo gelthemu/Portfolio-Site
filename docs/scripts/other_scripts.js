@@ -1,13 +1,3 @@
-// smooth-scroll-navigation
-document.querySelectorAll('nav a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute("href")).scrollIntoView({
-      behavior: "smooth",
-    });
-  });
-});
-
 // nav-pop-up
 document.addEventListener("DOMContentLoaded", () => {
   const navButton = document.getElementById("nav-button");
