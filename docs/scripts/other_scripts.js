@@ -73,6 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
           .then((response) => {
             if (response.ok) {
               contactPopup.style.display = "flex";
+              emailForm.reset();
             } else {
               alert("There was an error submitting the form.");
             }
@@ -81,8 +82,6 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("There was an error submitting the form.");
             console.error("Error:", error);
           });
-
-        emailForm.reset();
       } else {
         alert("Please enter a valid email address.");
       }
